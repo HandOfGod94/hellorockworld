@@ -1,0 +1,18 @@
+return {
+   build_dependencies = {
+      amalg = "0.8-1"
+   },
+   dependencies = {
+      basexx = "0.4.1-1",
+      binaryheap = "0.4-1",
+      bit32 = "5.3.5.1-1",
+      compat53 = "0.13-1",
+      cqueues = "20200726.54-0",
+      fifo = "0.2-0",
+      http = "0.4-0",
+      lpeg = "1.1.0-1",
+      lpeg_patterns = "0.5-0",
+      lua = "5.4-1",
+      luaossl = "20220711-0"
+   },
+}
