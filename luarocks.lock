@@ -1,6 +1,6 @@
 return {
    build_dependencies = {
-      amalg = "0.8-1"
+      fennel = "1.4.2-1"
    },
    dependencies = {
       basexx = "0.4.1-1",

@@ -14,17 +14,17 @@ dependencies = {
   "http == 0.4-0"
 }
 build_dependencies = {
-  "amalg == 0.8-1"
+  "fennel == 1.4.2"
 }
 build = {
    type = "command",
-   build_command = [[lua_modules/bin/amalg.lua src -o dist/hellorockworld.lua]],
+   build_command = [[fennel --lua ./lua --require-as-include --compile hellorockworld/init.fnl > dist/hellorockworld.lua]],
    install = {
      bin = {
        hellorockworld = "dist/hellorockworld.lua"
      }
    },
    modules = {
-     hellorockworld = "src/init.lua"
+     hellorockworld = "dist/hellorockworld.lua",
    }
 }
